@@ -1,0 +1,6 @@
+drizzle-orm
+postgres
+drizzle-kit
+@supabase/supabase-js
+express
+body-parser
