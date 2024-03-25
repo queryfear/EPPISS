@@ -1,3 +1,4 @@
+<<<<<<< HEAD:authentification/static/style/category.css
 .task{
     width: 30vh;
     height: 30vh;
@@ -16,4 +17,24 @@
 .task>p{
     margin-top: 13vh;
     font-size: 20pt;
+=======
+.task{
+    width: 30vh;
+    height: 30vh;
+    background-color: rgb(255, 129,59);
+    border-radius: 4vh;
+    float: left;
+    margin: 5vh;
+    margin-top: 20vh;
+    text-align: center;
+}
+
+.task:hover{
+    color: #f5f6fa;
+}
+
+.task>p{
+    margin-top: 13vh;
+    font-size: 20pt;
+>>>>>>> 3803cfea1f9a47b7c03ba8164943e6ef0c6e8018:public_html/style/category.css
 }
