@@ -4,16 +4,20 @@
         <title>Find The Flag</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="../../style/main.css" rel="stylesheet" type="text/css"/>
+        <link href="/static/main.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <header>
             <nav>
-                <a class="nav_a" href="../index.html"> Главная </a>
-                <a class="nav_a" href="../tasks.html"> Задания </a>
+                <a class="nav_a" href="/index"> Главная </a>
+                <a class="nav_a" href=""> Задания </a>
                 <a class="nav_a" href=""> Учебные материалы </a>
                 <a class="nav_a" href="login.html"><img class="authorize" href=""></a>
             </nav>
         </header>
+        <div class="task_sheet">
+            <p><%=task.name %></p>
+            <p><%=task.description %></p>
+        </div>
     </body>
 </html>
