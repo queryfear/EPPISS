@@ -10,24 +10,28 @@
     <body>
         <header>
             <nav>
+                <img class="logo">
                 <a class="nav_a" href="../index.html"> Главная </a>
-                <a class="nav_a" href=""> Задания </a>
-                <a class="nav_a" href=""> Учебные материалы </a>
-                <a class="nav_a" href=""><img class="authorize" href=""></a>
+                <a class="nav_a" href="./tasks.html"> Задания </a>
+                <a class="nav_a" href="in_dev.html"> Учебные материалы </a>
+                <a class="login" href="./login.html">Войти</a>
             </nav>
         </header>
-        <div>
-            <form id="login_form" method="post" action="http://localhost:5000" >
-                <p> 
-                    <label for="login">Придумайте логин:<br></label>
-                    <input id="login" name="login" required placeholder="Your_login">
-                </p>
-                <p> 
-                    <label for="password">Придумайте пароль:<br></label>
-                    <input id="password" type="password" name="password" required placeholder="***********"><br>
-                    <input type="submit" id="submit" value="Создать">
-                </p>
-            </form>
-        </div>
+        <img class="icon">
+        <form id="login_form" method="post" action="http://localhost:5000" >
+            <p>
+                Регистрация
+            </p>
+            <p>
+                <input id="login" name="login" required placeholder=" Введите почту">
+            </p>
+            <p>
+                <input id="password1" type="password" name="password1" required placeholder=" Введите пароль"><br>
+            </p>
+            <p>
+                <input id="password2" type="password" name="password2" required placeholder=" Повторите пароль"><br>
+                <button type="submit" id="submit" >Создать<a href="../index.html" /></button>
+            </p>
+        </form>
     </body>
 </html>

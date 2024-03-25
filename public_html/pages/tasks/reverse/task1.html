@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Find The Flag</title>
+        <link rel="stylesheet" href="../../../style/main.css">
+        <link rel="stylesheet" href="../../../style/answer.css">
+        <script src="../../../script/checker.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img class="logo">
+                <a class="nav_a" href="../../../index.html"> Главная </a>
+                <a class="nav_a" href="../../tasks.html"> Задания </a>
+                <a class="nav_a" href="../../in_dev.html"> Учебные материалы </a>
+                <a class="login" href="../../login.html">Войти</a>
+            </nav>
+        </header>
+        <div>
+            <p class="info">
+                Мой знакомый программист скинул на проверку код отвечающий за авторизацию в приложение,
+                которое он разрабатывает. Он часто жаловался на руководство, ведь никому не платят зарплату. Но директор
+                всегда уходит от ответственности. Может быть в коде спрятано что-то, что поможет обличить директора?<br>
+                <button>Скачать файл задания</button>
+            </p>
+            <p class="flag">
+                Введите флаг:<br>
+                <input type="text" id="answer" placeholder=" FtF{flag}"><br>
+                <button onclick="check()">Отправить</button>
+            </p>
+            <p id="res"></p>
+        </div>
+    </body>
+</html>

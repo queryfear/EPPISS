@@ -1,38 +1,14 @@
-header{
-    background-image: url(../images/background.jpg);
-    width: 101%;
-    height: 100vh;
-    margin-left: -1vh;
-    margin-top: -1vh;
-    border-radius: 0 0 3vh 3vh;
-    box-shadow: 0 0 20vh black;
+p{
+    margin-top: 5vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    font-family: Montserrat;
+    font-size: 30pt;
 }
 
-.nav_a:hover{
-    color: rgb(68,159,42);
-}
-
-header > div{
-    margin: auto;
-    margin-top: 25vh;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-    width: 80vh;
-    background-color: rgba(0,0,0,0.7);
-}
-
-.title{
-    font-size: 50pt;
-    font-family: Hack;
-    color: azure;
-    margin-left: 3vh;
-    margin-top: 1vh;
-}
-
-.subtitle{
-    font-size: 20pt;
-    font-family: Hack;
-    color: azure;
-    margin-left: 6vh;
-    margin-right: 3vh;
+h1{
+    margin-top: 10vh;
+    margin-left: 10vh;
+    font-family: Montserrat;
+    font-size: 35pt;
 }

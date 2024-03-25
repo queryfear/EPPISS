@@ -10,25 +10,26 @@
     <body>
         <header>
             <nav>
+                <img class="logo">
                 <a class="nav_a" href="../index.html"> Главная </a>
-                <a class="nav_a" href=""> Задания </a>
-                <a class="nav_a" href=""> Учебные материалы </a>
-                <a class="nav_a" href=""><img class="authorize" href=""></a>
+                <a class="nav_a" href="./tasks.html"> Задания </a>
+                <a class="nav_a" href="in_dev.html"> Учебные материалы </a>
+                <a class="login" href="">Войти</a>
             </nav>
         </header>
-        <div>
-            <form id="login_form" method="get" action="http://localhost:5000" >
-                <p> 
-                    <label for="login">Логин:<br></label>
-                    <input id="login" name="login" required placeholder="">
-                </p>
-                <p> 
-                    <label for="password">Пароль:<br></label>
-                    <input id="password" type="password" name="password" required placeholder="">
-                </p>
-                <input type="submit" id="submit" value="Войти">
-                <p>Нет учётной записи? <a href="register.html">создать её!</a></p>
-            </form>
-        </div>
+        <img class="icon">
+        <form id="login_form" method="get" action="http://localhost:5000" >
+            <p>
+                Авторизация
+            </p>
+            <p>
+                <input id="login" name="login" required placeholder=" Электронная почта">
+            </p>
+            <p>
+                <input id="password" type="password" name="password" required placeholder=" Пароль">
+            </p>
+            <input type="submit" id="submit" value="Войти">
+            <p>Нет учётной записи? <a href="register.html">создать её!</a></p>
+        </form>
     </body>
 </html>
