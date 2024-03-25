@@ -1,0 +1,19 @@
+.task{
+    width: 30vh;
+    height: 30vh;
+    background-color: #ff5001;
+    border-radius: 4vh;
+    float: left;
+    margin: 5vh;
+    margin-top: 20vh;
+    text-align: center;
+}
+
+.task:hover{
+    color: #f5f6fa;
+}
+
+.task>p{
+    margin-top: 13vh;
+    font-size: 20pt;
+}

@@ -1,0 +1,75 @@
+body{
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header{
+    width: 100vw;
+    height: 13vh;
+    margin-left: -1vh;
+    margin-top: -1vh;
+    background-color: #f5f6fa;
+    border-bottom: #1a1a1a solid 0.5vh;
+}
+
+nav{
+    margin: auto;
+    margin-left: 10vh;
+    text-align: left;
+    height: 10vh;
+    padding-top: 2vh;
+}
+
+.logo{
+    content: url("../images/logo.png");
+    width: 9vh;
+    float: left;
+}
+
+a{
+    text-decoration: none;
+    font-family: Montserrat;
+    color: #1a1a1a;
+}
+
+nav>a{
+    margin-top: 2vh;
+    margin-left: 10vh;
+    float: left;
+    font-size: 25pt;
+}
+
+.login{
+    float: right;
+    margin-right: 10vh;
+}
+
+nav>a:active{
+    color: #1a1a1a;
+}
+
+nav>a:hover{
+    color: #ff5001;
+}
+
+div{
+    background-color: #f5f6fa;
+    margin: auto;
+    width: 160vh;
+    height: 85.5vh;
+    border-radius: 0 0 4vh 4vh;
+    padding-top: 0.1px;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 900;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/Montserrat/Montserrat-Black.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/Montserrat/Montserrat-Black.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.jsdelivr.net/gh/webfontworld/Montserrat/Montserrat-Black.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/webfontworld/Montserrat/Montserrat-Black.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/webfontworld/Montserrat/Montserrat-Black.ttf') format("truetype");
+    font-display: auto;
+}

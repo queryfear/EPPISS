@@ -5,22 +5,25 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="/static/main.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="/static/tasks.css">
     </head>
     <body>
-        <header>
-            <nav>
-                <a class="nav_a" href="/index"> Главная </a>
-                <a class="nav_a" href=""> Задания </a>
-                <a class="nav_a" href=""> Учебные материалы </a>
-                <a class="nav_a" href="login.html"><img class="authorize" href=""></a>
-            </nav>
-        </header>
-        <div class="task_sheet">
+    <header>
+        <nav>
+            <img class="logo">
+            <a class="nav_a" href="/index"> Главная </a>
+            <a class="nav_a" href="/categories"> Задания </a>
+            <a class="nav_a" href="/pages/in_dev.html"> Учебные материалы </a>
+            <a class="login" href="/pages/login.html">Войти</a>
+        </nav>
+    </header>
+        <div>
             <% for(var i = 0; i < categories.length; i++) {%>
-                <div>
-                    <p><a href=<%="/tasks/"+categories[i].id %>><%=categories[i].categoryname %></a></p>
-                    <p><%=categories[i].categorydescription %></p>
-                </div>
+                <p class="caption"><a href=<%="/tasks/"+categories[i].id %>><%=categories[i].categoryname %></a></p>
+                <p class="desc"><%=categories[i].categorydescription %></p>
+                <!-- <p class="caption"></p>
+                <a class="task" href="./cryptography/task1.html"><p>Задание 1</p></a>
+                <a class="task" href="../in_dev.html"><p>В разработке</p></a> -->
             <%} %>
         </div>
     </body>

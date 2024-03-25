@@ -1,23 +1,39 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
     <head>
-        <title>Find The Flag</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="/static/main.css" rel="stylesheet" type="text/css"/>
+        <title>Find The Flag</title>
+        <link rel="stylesheet" href="/static/main.css">
+        <link rel="stylesheet" href="/static/answer.css">
+        <link rel="stylesheet" href="/static/tasks.css">
+        <script src="/script/checker.js"></script>
+        <script src="/script/download.js"></script>
     </head>
     <body>
         <header>
             <nav>
+                <img class="logo">
                 <a class="nav_a" href="/index"> Главная </a>
-                <a class="nav_a" href=""> Задания </a>
-                <a class="nav_a" href=""> Учебные материалы </a>
-                <a class="nav_a" href="login.html"><img class="authorize" href=""></a>
+                <a class="nav_a" href="/categories"> Задания </a>
+                <a class="nav_a" href="/pages/in_dev.html"> Учебные материалы </a>
+                <a class="login" href="/pages/login.html">Войти</a>
             </nav>
         </header>
-        <div class="task_sheet">
-            <p><%=task.name %></p>
-            <p><%=task.description %></p>
+        <div>
+            <p class="caption">
+                <%=task.name %>
+            </p>
+            <p class="info">
+                <%=task.description %><br>
+                <button onclick="download('<%=task.filename%>')">Скачать файл задания</button>
+            </p>
+            <p class="flag">
+                Введите флаг:<br>
+                <input type="text" id="answer" placeholder=" FtF{flag}"><br>
+                <button onclick="check()">Отправить</button>
+            </p>
+            <p id="res"></p>
         </div>
     </body>
 </html>

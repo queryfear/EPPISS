@@ -16,11 +16,12 @@ app.use(cors());
 app.use("/images", express.static(path.join(__dirname, "/static/images")));
 app.use("/static", express.static(path.join(__dirname, "/static/style")));
 app.use("/pages", express.static(path.join(__dirname, "/static/pages")));
+app.use("/script", express.static(path.join(__dirname, "/static/script")));
 app.use("/files", express.static(path.join(__dirname, "/static/files")));
 app.use("/auth", authRouter);
-app.use("/index", express.static(path.join(__dirname, "/static/pages/index.html")))
-app.use("/index/tasks", tasksRouter);
-app.use("/index/categories", categoriesRouter);
+app.use("/index", express.static(path.join(__dirname, "/static/index.html")))
+app.use("/tasks", tasksRouter);
+app.use("/categories", categoriesRouter);
 
 const start = async () => {
     try {
